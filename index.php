@@ -4,7 +4,7 @@ require('config/includes/inc.php');
 $LTRMark = '‎'; //For RTL languages
 
 $ascloudVersion = '0.1';
-$minLangVersion = '1';
+$minLangVersion = 1;
 
 $ascloudSession = 'ascloud_ses';
 $ascloudSessionPass = 'ascloud_pass';
@@ -58,9 +58,15 @@ else
 			<?PHP
 			foreach($langs as $langFor)
 			{
-				$langName = json_decode(file_get_contents($langFor), true)['name'];
-				$langShort = substr($langFor, 13, strlen($langFor) - 18);
-				echo '<option value="' . $langShort . '"' . ($language == $langShort ? ' selected' : '') . ">$langName</option>";
+				$langDecoded = json_decode(file_get_contents($langFor), true);
+				
+				if ($langDecoded['version'] >= $minLangVersion)
+				{
+					$langName = $langDecoded['name'];
+					$langShort = substr($langFor, 13, strlen($langFor) - 18);
+					echo '<option value="' . $langShort . '"' .
+						($language == $langShort ? ' selected' : '') . ">$langName</option>";
+				}
 			}
 			?>
 		  </select>
@@ -613,8 +619,15 @@ function loadLanguage()
 	global $language;
 	global $langJson;
 	global $_l_;
+	global $minLangVersion;
+	
 	$langJson = json_decode(file_get_contents("config/langs/$language.json"), true);
+	
 	$_l_ = $langJson['values'];
+	
+	if (($langJson['version'] < $minLangVersion))
+		echo "Warning: outdated language version ({$langJson['version']}). " .
+			"Please select another language with version at least {$minLangVersion}.";
 }
 
 function generateTails(){
