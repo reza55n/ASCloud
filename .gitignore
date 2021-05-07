@@ -1,0 +1,5 @@
+config/sessions/sess_*
+texts/*.txt
+/user.php
+view/*
+!view/index.php
