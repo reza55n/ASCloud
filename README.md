@@ -7,11 +7,14 @@ This storage is relied on simplicity more than security, so it's possible that o
 ![Alvandsoft Cloud screenshot](https://www.alvandsoft.com/cloud123/ascloud_0.1.png)
 
 ## Installation
-1. Copy files in `public_html` or in a subdirectory
-2. Run for first time to create `user.php` file
+1. Copy files in `public_html` or in a subdirectory path that only contains English characters, numbers and underscore
+2. Run for first time:
+
+![Welcome screen](https://www.alvandsoft.com/cloud123/ascloud_0.1_welcome.png)
 
 ## Tips
 You can increase `upload_max_filesize` from PHP configuration to allow large file uploads.
 
 If you forgot your password, you can remove `user.php` file manually.
 
+You can contribute by sending your feedbacks or making new themes or language supports:)
