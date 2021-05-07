@@ -2,7 +2,7 @@ A personal notetaking, cloud storage and file sharing service that you can put i
 
 It looks like a personal chat (especially 'Saved Messages' in Telegram) except it needs no installations or phone-based logins and also you can preview or share its files using a simple link.
 
-This storage is relied on simplicity more than security, so it's possible that other people guess simple uploaded files' name and download them. If you don't want to share files, you can use more complex file names to prevent this problem.
+**IMPORTANT:** This storage is relied on simplicity more than security, so it's possible that other people guess simple uploaded files' name and download them. If you don't want to share files, you can use more complex file names to prevent this problem.
 
 ![Alvandsoft Cloud screenshot](https://www.alvandsoft.com/cloud123/ascloud_0.1.png)
 
