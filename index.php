@@ -3,8 +3,8 @@ require('config/includes/inc.php');
 
 $LTRMark = '‎'; //For RTL languages
 
-$ascloudVersion = '0.1';
-$minLangVersion = 1;
+$ascloudVersion = '0.2';
+$minLangVersion = 2;
 
 $ascloudSession = 'ascloud_ses';
 $ascloudSessionPass = 'ascloud_pass';
@@ -48,7 +48,7 @@ else
 
     ?><form action="." method="post" class="frm">
 		<?PHP
-		echo "<h3>{$_l_['welcome']}</h3>";
+		echo '<h3>' . sprintf($_l_['welcome'], $ascloudVersion) . '</h3>';
 		if (isset($errMsg))
 			echo "<div class='form warning'>$errMsg</div>";
 			?>
