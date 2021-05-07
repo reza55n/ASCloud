@@ -4,6 +4,8 @@ It looks like a personal chat (especially 'Saved Messages' in Telegram) except i
 
 This storage is relied on simplicity more than security, so it's possible that other people guess simple uploaded files' name and download them. If you don't want to share files, you can use more complex file names to prevent this problem.
 
+![Alvandsoft Cloud screenshot](https://www.alvandsoft.com/cloud123/ascloud_0.1.png)
+
 ## Installation
 1. Copy files in `public_html` or in a subdirectory
 2. Run for first time to create `user.php` file
@@ -12,3 +14,4 @@ This storage is relied on simplicity more than security, so it's possible that o
 You can increase `upload_max_filesize` from PHP configuration to allow large file uploads.
 
 If you forgot your password, you can remove `user.php` file manually.
+
