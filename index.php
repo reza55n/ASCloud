@@ -320,7 +320,7 @@ generateTimeScript();
 $antiFirefoxFill = bin2hex(random_bytes(8));
 ?>
     <div id="allfooters" style="text-align:<?= $langJson['dir'] == 'rtl' ? 'left' : 'right' ?>">
-    <textarea id="notetext" class="notetext" name="<?=$antiFirefoxFill?>"></textarea>
+    <textarea dir="auto" id="notetext" class="notetext" name="<?=$antiFirefoxFill?>"></textarea>
     <div class="notefooter"><div id="progressf1" class="progressok"></div></div>
     <div class="notefooter">
         <input id="file1" type="file" style="display:none" name="<?=$antiFirefoxFill?>">
