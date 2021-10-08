@@ -1,22 +1,25 @@
-*{
+* {
 	box-sizing: border-box;
 	font-family:tahoma,arial;
 }
-.muted{
+body {
+	overflow-x:hidden;
+}
+.muted {
 	font-size:80%;
 	color:#7a9e4d;
 }
-.footer{
+.footer {
 	margin-top:9px;
 }
-.frm{
+.frm {
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:10px;
 	display:table;
 	width:auto;
 }
-.linkinput{
+.linkinput {
 	/*Comment 2 below codes to make link input visible*/
 	position:absolute;
 	left:-999em;
@@ -29,7 +32,7 @@
 	width:210px;
 	margin:1px;
 }
-.header{
+.header {
 	margin-bottom:6px;
 	padding-bottom:3px;
 	border-bottom-width:1px;
@@ -37,7 +40,7 @@
 	border-bottom-color:#b7d591;
 }
 
-.textbox{
+.textbox {
 	margin-top:9px;
 	margin-bottom:9px;
 	margin-left:auto;
@@ -47,7 +50,7 @@
 	max-width:800px;
 	padding: 10px; 
 }
-.notetext{
+.notetext {
 	display:block;
 	margin-top:9px;
 	margin-bottom:4px;
@@ -63,10 +66,10 @@
 	padding: 10px;
 	border-style: hidden;
 }
-div.form{
+div.form {
 	margin-bottom:8px;
 }
-.button{
+.button {
 	display:inline-block;
 	background: #e8f7d5;
 	border-radius: 7px;
@@ -79,25 +82,25 @@ div.form{
 	margin-right:4px;
 
 }
-.button:hover{
+.button:hover {
 	background:#c3dea2;
 }
-.warning{
+.warning {
 	color:red;
 }
-.notefooter{
+.notefooter {
 	margin-bottom:4px;
 	margin-left:auto;
 	margin-right:auto;
 	max-width:800px;
 	width:100%;
 }
-p{
+p {
 	margin-top:0;
 	margin-bottom:0;
 	white-space:pre-wrap;
 }
-a:link,a:visited{
+a:link, a:visited {
   text-decoration: none;
   color:#3e6908;
 }
@@ -106,13 +109,13 @@ a:link,a:visited{
 	padding:2px 0px 2px 0px;
 }
 
-.progressok{
+.progressok {
 	background-color:green;
 }
-.progressfail{
+.progressfail {
 	background-color:red;
 }
-#allfooters{
+#allfooters {
 	margin:0px;
 	padding:0px;
 }
