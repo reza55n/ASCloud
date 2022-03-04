@@ -4,13 +4,13 @@ It looks like a personal chat (especially 'Saved Messages' in Telegram) except i
 
 **IMPORTANT:** This storage is relied on simplicity more than security, so it's possible that other people guess simple uploaded files' name and download them. If you don't want to share files, you can use more complex file names to prevent this problem.
 
-![Alvandsoft Cloud screenshot](https://www.alvandsoft.com/cloud123/ascloud_0.1.png)
+![Alvandsoft Cloud screenshot](https://www.alvandsoft.com/files/ascloud_0.1.png)
 
 ## Installation
 1. Copy files in `public_html` or in a subdirectory path that only contains English characters, numbers and underscore
 2. Run for first time:
 
-![Welcome screen](https://www.alvandsoft.com/cloud123/ascloud_0.1_welcome.png)
+![Welcome screen](https://www.alvandsoft.com/files/ascloud_0.1_welcome.png)
 
 ## Tips
 You can increase `upload_max_filesize` from PHP configuration to allow large file uploads.
